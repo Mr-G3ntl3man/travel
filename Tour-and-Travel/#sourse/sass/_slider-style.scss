@@ -1,0 +1,123 @@
+/* Слайдер */
+.slick-slider {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* Точки */
+.slick-dots {
+	display: flex;
+	justify-content: center;
+}
+.slick-dots li {
+	list-style: none;
+	margin: 20px 10px;
+}
+.slick-dots button {
+}
+//========================================================================================================================================================
+
+.place-slider {
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+	}
+	.slick-dots li {
+		list-style: none;
+		margin: 30px 10px 0px 10px;
+		font-size: 0;
+	}
+	.slick-dots button {
+		font-size: 0;
+		width: 15px;
+		height: 15px;
+		background: linear-gradient(156.14deg, #bff0dd 12.18%, #57d2a3 87.99%);
+		border-radius: 50%;
+		transition: all 1s ease 0s;
+	}
+
+	.slick-dots li.slick-active button {
+		transition: all 1s ease 0s;
+		border: 1.5px solid #57d2a3;
+		background: #fff;
+	}
+	.slick-slide {
+	}
+}
+
+.testimonials-slider {
+	position: relative;
+	.slick-dots li.slick-active button {
+	}
+	.slick-arrow {
+		position: absolute;
+		bottom: 0;
+		right: 90px;
+		z-index: 10;
+		font-size: 0;
+		width: 40px;
+		height: 40px;
+		@media (max-width: 1100px) {
+			right: 75px;
+		}
+		@media (max-width: 950px) {
+			right: 130px;
+		}
+	}
+	.slick-arrow.slick-prev {
+		right: 150px;
+		background: url("../img/people/previous.svg") 0 0 / 100% no-repeat;
+		@media (max-width: 1100px) {
+			right: 135px;
+		}
+		@media (max-width: 950px) {
+			right: 190px;
+		}
+		transition: transform 0.3s ease 0s;
+		&:hover {
+			transition: transform 0.3s ease 0s;
+			transform: scale(1.2);
+		}
+	}
+	.slick-arrow.slick-next {
+		background: url("../img/people/next.svg") 0 0 / 100% no-repeat;
+		transition: transform 0.3s ease 0s;
+		&:hover {
+			transition: transform 0.3s ease 0s;
+			transform: scale(1.2);
+		}
+	}
+}
